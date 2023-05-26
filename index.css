@@ -1,0 +1,225 @@
+@media (max-width: 2750px) {
+  .all {
+    width: min(95%, 70rem);
+    padding-block: 2rem;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(+300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+body {
+  background-color: #f0f0f0;
+}
+.all {
+  width: 1900px;
+  height: 900px;
+}
+.container {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  display: grid;
+  gap: 1.5rem;
+  color: #f0f0f0;
+
+  width: min(95%, 70rem);
+  padding-block: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-inline: auto;
+  grid-template-areas:
+    "name1 name1 name2 name3"
+    "name4 name5 name5 name3";
+}
+
+.container p {
+  font-size: 15px;
+}
+.container .data {
+  width: 200px;
+  height: 50px;
+  font-size: 10px;
+}
+
+.container .data h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  vertical-align: top;
+}
+.name1 {
+  padding: 10px;
+  font-size: 25px;
+  grid-area: name1;
+  height: 220px;
+  background-color: #9333ea;
+  border-radius: 7px;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name2 {
+  padding: 10px;
+  font-size: 25px;
+  grid-area: name2;
+  border-radius: 7px;
+  background-color: #64748b;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name3 {
+  padding: 10px;
+  font-size: 25px;
+  background-color: #cbd5e1;
+  grid-area: name3;
+  border-radius: 7px;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name4 {
+  border-radius: 7px;
+  padding: 10px;
+  grid-area: name4;
+  font-size: 25px;
+  background-color: #cbd5e1;
+  height: 220px;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name5 {
+  border-radius: 7px;
+  padding: 10px;
+  grid-column: span 2;
+  grid-area: name5;
+  font-size: 25px;
+  background-color: #111827;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.actions {
+  width: min(95%, 70rem);
+  padding-block: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #111827;
+  margin-left: 390px;
+  height: 200px;
+  border-radius: 10px;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  background-color: #cbd5e1;
+}
+
+.actions {
+  color: #f0f0f0;
+}
+.actions h1 {
+  text-align: center;
+}
+.blog {
+  border: none;
+  background-color: #e2e8f0;
+  width: 320px;
+  display: grid;
+  margin-left: 400px;
+  border-radius: 7px;
+  height: 80px;
+}
+.blog:focus {
+  outline: none;
+  border: none;
+}
+button {
+  background-color: #94a3b8;
+  border: none;
+  height: 30px;
+  width: 80px;
+  color: #f0f0f0;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.add {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.add:hover {
+  transform: translateY(-2px);
+  color: #94a3b8;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.remove:hover {
+  transform: translateY(-2px);
+  color: #94a3b8;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.change:hover {
+  transform: translateY(-2px);
+  color: #94a3b8;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name1:hover {
+  transform: translateY(-2px);
+  background-color: #a855f7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name2:hover {
+  transform: translateY(-2px);
+  background-color: #94a3b8;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name3:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name4:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.name5:hover {
+  transform: translateY(-2px);
+  background-color: #374151;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.actions:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
